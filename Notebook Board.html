@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Notebook Board · 学习板</title>
+<meta name="viewport" content="width=1280">
+<link rel="stylesheet" href="styles.css">
+<!-- KaTeX 数学公式渲染(本地 vendor, 不走外网 CDN) -->
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<script defer src="vendor/katex/katex.min.js"></script>
+<script defer src="vendor/katex/auto-render.min.js"></script>
+<style>
+  html, body { margin: 0; padding: 0; }
+  .katex { font-size: 1.05em; }
+  .katex-display { margin: 1em 0; overflow-x: auto; overflow-y: hidden; }
+  .katex-display > .katex { font-size: 1.18em; }
+</style>
+</head>
+<body>
+
+<div id="root"></div>
+
+<!-- React + Babel (本地 vendor) -->
+<script crossorigin src="vendor/react.development.js"></script>
+<script crossorigin src="vendor/react-dom.development.js"></script>
+<script src="vendor/babel.min.js"></script>
+
+<!-- 章节内容: 8 个独立文件(ch0 数学基础 + ch1-ch7 主章) -->
+<script type="text/babel" src="chapters/ch0_basics.js?v=20260511c"></script>
+<script type="text/babel" src="chapters/ch1_intro.js?v=20260511c"></script>
+<script type="text/babel" src="chapters/ch2_matrix.js?v=20260511c"></script>
+<script type="text/babel" src="chapters/ch3_sparse.js?v=20260511c"></script>
+<script type="text/babel" src="chapters/ch4_entropy.js?v=20260511c"></script>
+<script type="text/babel" src="chapters/ch5_bayes.js?v=20260511c"></script>
+<script type="text/babel" src="chapters/ch6_convex.js?v=20260511c"></script>
+<script type="text/babel" src="chapters/ch7_nonconvex.js?v=20260511c"></script>
+
+<!-- 数据装配 + 组件 + 主 app -->
+<script type="text/babel" src="data.jsx?v=20260511c"></script>
+<script type="text/babel" src="components-mindmap.jsx?v=20260511c"></script>
+<script type="text/babel" src="components-cards.jsx?v=20260511c"></script>
+<script type="text/babel" src="components-course.jsx?v=20260511c"></script>
+<script type="text/babel" src="app.jsx?v=20260511c"></script>
+
+</body>
+</html>
