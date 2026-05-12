@@ -32,3 +32,7 @@ python3 -m http.server 8765
 ## License
 
 MIT
+
+## Star history
+
+If this helped you, leave a star — it motivates further work.
