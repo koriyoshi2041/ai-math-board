@@ -32,3 +32,5 @@ python3 -m http.server 8765
 ## License
 
 MIT
+
+PRs welcome — feel free to open one.
